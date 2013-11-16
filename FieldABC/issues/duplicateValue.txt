@@ -1,0 +1,20 @@
+Since Field is driving from both additive and multipicative group and each has it's own value (set by calling init) are there two values? Or two copies of each?
+1-Fine out by inspecting
+2-Remedy drive both additive and mulipcative Semigroups from one base which store a value
+
+Resolved:
+the following in testDistributive.py
+
+
+    #verify iheriting from two semigroups with a 'v' member doesnt duplicate v
+    print("\nprint r1 dic:")
+    print("r1.__dict__=",r1.__dict__)
+    print("End  r1 dic.Proves there is only one 'v'\n")
+    
+
+	
+	prints
+	
+print r1 dic:
+r1.__dict__= {'modulus': 11, 'v': 21}
+End  r1 dic.Proves there is only one 'v'
